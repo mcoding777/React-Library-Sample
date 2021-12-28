@@ -2,7 +2,7 @@
 
 function Chart1() {
     return (
-      <div className="chart1">
+      <div className="chart1Container">
           <div style={{height: 100}}><span>능력<br/>발휘</span></div>
           <div style={{height: 100}}><span>자율성</span></div>
           <div style={{height: 100}}><span>보수</span></div>

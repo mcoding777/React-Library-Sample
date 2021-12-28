@@ -1,4 +1,4 @@
-import { Chart as ChartJS } from 'chart.js/auto'
+import 'chart.js/auto'
 import { Chart } from 'react-chartjs-2'
 
 // chart.js로 만든 라인 차트
