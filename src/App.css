@@ -1,5 +1,9 @@
-.App {
+* {
   text-align: center;
+}
+
+body {
+  background-color: gray;
 }
 
 
@@ -44,4 +48,15 @@
   color: white;
   
   line-height: 18px;
+}
+
+
+/* chart2 */
+.chart2Container {
+  width: 600px;
+
+  padding: 30px;
+  margin: 100px;
+
+  background-color: white;
 }
