@@ -33,24 +33,27 @@ function Chart4() {
                 color: 'white',
                 textAlign: 'center',
                 formatter: (value, ctx) => {
-                  let index = ctx.dataIndex;
-                  let label = ctx.chart.data.labels[index];
-                  return label + '\n' + value + '%';
+                    let index = ctx.dataIndex;
+                    let label = ctx.chart.data.labels[index];
+                    return label + '\n' + value + '%';
                 },
-            },
+              },
             legend: {
                 position: 'right',
                 labels: {
+                    font: {
+                        size: 20,
+                    },
                     padding: 30, // 범례 사이 간격 : 상하는 조절할 수 없다!
                     usePointStyle: true,
                 },
             },
-        },
+        }
     }
   
     return (
         <div className='chart4Container'>
-            <Pie type="bar" data={data} options={options} />
+            <Pie data={data} options={options} />
         </div>
     )
   }
