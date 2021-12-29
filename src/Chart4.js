@@ -4,7 +4,9 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 // chart.js로 만든 도넛 차트
 // pie 차트는 chart로 사용하면 라벨이 이상하게 나온다
+
 Chart.register(ChartDataLabels);
+// 모든 차트에 적용되는거라 다른 차트에도 labels이 나옴... 살려줘
 
 function Chart4() {
 
