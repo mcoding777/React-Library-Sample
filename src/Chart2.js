@@ -1,7 +1,8 @@
 import 'chart.js/auto'
-import { Chart } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 
 // chart.js로 만든 라인 차트
+// 다른 차트와 다르게 import 'chart.js/auto'를 빼면 오류가 발생한다
 
 function Chart2() {
 
@@ -51,9 +52,9 @@ function Chart2() {
           },
       },
       plugins: {
-          datalabels: {
-            display: false,
-          },
+          // datalabels: {
+          //   display: false,
+          // },
           legend: { // 범례 스타일링
             labels: {
               usePointStyle: true,  // 라벨 아이콘을 도형과 동일하게 할 것인가?
@@ -64,7 +65,7 @@ function Chart2() {
   
     return (
         <div className='chart2Container'>
-            <Chart type="line" data={data} options={options} />
+            <Line data={data} options={options} />
         </div>
     )
   }

@@ -1,4 +1,3 @@
-import 'chart.js/auto'
 import { Chart } from 'react-chartjs-2'
 
 // chart.js로 만든 막대 차트
@@ -18,18 +17,10 @@ function Chart3() {
         },
       ],
     };
-
-    const options = {
-        plugins: {
-            datalabels: {
-              display: false,
-            },
-          }
-        };
   
     return (
         <div className='chart3Container'>
-            <Chart type="bar" data={data} options={options} />
+            <Chart type="bar" data={data} />
         </div>
     )
   }

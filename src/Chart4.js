@@ -1,13 +1,11 @@
-import 'chart.js'
 import { Pie } from 'react-chartjs-2'
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 // chart.js로 만든 도넛 차트
-// pie 차트는 chart로 사용하면 라벨이 이상하게 나온다
 
-// Chart.register(ChartDataLabels);
-// 글로벌 플러그인 (같은 페이지의 모든 차트에 적용됨)
-// 차트 속성에 plugins={[ChartDataLabels] 추가하면 해당 차트만 적용
+// chartjs-plugin-datalabels 플러그인
+// Chart.register(ChartDataLabels); => 글로벌 플러그인 (같은 페이지의 모든 차트에 적용됨)
+// 차트 속성에 plugins={[ChartDataLabels] 추가 => 개별 플러그인
 
 function Chart4() {
 
