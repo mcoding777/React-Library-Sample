@@ -1,12 +1,13 @@
-import { Chart } from 'chart.js'
+import 'chart.js'
 import { Pie } from 'react-chartjs-2'
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 // chart.js로 만든 도넛 차트
 // pie 차트는 chart로 사용하면 라벨이 이상하게 나온다
 
-Chart.register(ChartDataLabels);
-// 모든 차트에 적용되는거라 다른 차트에도 labels이 나옴... 살려줘
+// Chart.register(ChartDataLabels);
+// 글로벌 플러그인 (같은 페이지의 모든 차트에 적용됨)
+// 차트 속성에 plugins={[ChartDataLabels] 추가하면 해당 차트만 적용
 
 function Chart4() {
 
@@ -17,7 +18,13 @@ function Chart4() {
           label: "장르 분포도",
           borderColor: 'white',
           borderWidth: 1,
-          backgroundColor: ["red", "orange", "yellow", "green", "blue"],
+          backgroundColor: [
+              "#fd536d",
+              "#ff8957",
+              "#eed054",
+              "#cbd84a",
+              "#00c182",
+            ],
           data: [25, 20, 25, 15, 15],
         },
       ],
@@ -53,7 +60,11 @@ function Chart4() {
   
     return (
         <div className='chart4Container'>
-            <Pie data={data} options={options} />
+            <Pie 
+                data={data} 
+                options={options} 
+                plugins={[ChartDataLabels]} 
+            />
         </div>
     )
   }
