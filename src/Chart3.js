@@ -13,15 +13,23 @@ function Chart3() {
           label: '릴리즈되는 한국 컨텐츠 수',
           borderColor: 'white',
           borderWidth: 5,
-          backgroundColor: 'rgb(255, 99, 132)',
+          backgroundColor: '#BDBDBD',
           data: [700, 600, 807, 432, 234, 453],
         },
       ],
     };
+
+    const options = {
+        plugins: {
+            datalabels: {
+              display: false,
+            },
+          }
+        };
   
     return (
         <div className='chart3Container'>
-            <Chart type="bar" data={data} />
+            <Chart type="bar" data={data} options={options} />
         </div>
     )
   }

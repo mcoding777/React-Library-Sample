@@ -14,7 +14,7 @@ function Chart2() {
           borderColor: 'rgb(54, 162, 235)',
           borderWidth: 2,
           data: [219876227, 216385269, 226678777, 59524093, 59540088],
-          tension: 0.5,
+          tension: 0.5, // 선을 얼마나 부드럽게 할 것인가
           yAxisID: 'y0', // 축 id
         },
         {
@@ -51,14 +51,16 @@ function Chart2() {
           },
       },
       plugins: {
+          datalabels: {
+            display: false,
+          },
           legend: { // 범례 스타일링
             labels: {
-              usePointStyle: true,
-              // 범례 도형 모양과 관련된 속성으로, false일 경우엔 기본 직사각형 도형으로 표시됩니다.
+              usePointStyle: true,  // 라벨 아이콘을 도형과 동일하게 할 것인가?
               },
           }
-      }
-  };
+        }
+      };
   
     return (
         <div className='chart2Container'>
