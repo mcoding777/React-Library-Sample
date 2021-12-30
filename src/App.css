@@ -51,7 +51,6 @@ body {
   line-height: 18px;
 }
 
-
 /* LineChart */
 .LineChart_Container {
   width: 600px;
@@ -61,7 +60,6 @@ body {
 
   background-color: white;
 }
-
 
 /* BarChart */
 .BarChart_Container {
@@ -74,9 +72,19 @@ body {
   background-color: white;
 }
 
-
 /* PieChart */
 .PieChart_Container {
+  width: 700px;
+  height: 600px;
+
+  padding: 30px;
+  margin: 100px auto;
+
+  background-color: white;
+}
+
+/* DoughnutChart */
+.DoughnutChart_Container {
   width: 700px;
   height: 600px;
 

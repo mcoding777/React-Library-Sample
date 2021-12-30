@@ -7,7 +7,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 // Chart.register(ChartDataLabels); => 글로벌 플러그인 (같은 페이지의 모든 차트에 적용됨)
 // 차트 속성에 plugins={[ChartDataLabels] 추가 => 개별 플러그인
 
-function Chart5() {
+function DoughnutChart() {
 
     const data = {
       labels: ['Action', 'Drama', 'Comedy', 'Crime', 'etc'],
@@ -57,8 +57,8 @@ function Chart5() {
     }
   
     return (
-        <div className='chart4Container'>
-            <Pie 
+        <div className='DoughnutChart_Container'>
+            <Doughnut 
                 data={data} 
                 options={options} 
                 plugins={[ChartDataLabels]} 
@@ -67,4 +67,4 @@ function Chart5() {
     )
   }
 
-export default Chart5;
+export default DoughnutChart;

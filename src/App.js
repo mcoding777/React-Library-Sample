@@ -3,6 +3,7 @@ import MyBarChart from './MyBarChart';
 import LineChart from './LineChart';
 import BarChart from './BarChart';
 import PieChart from './PieChart';
+import DoughnutChart from './DoughnutChart';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <BarChart />
           <br />
           <PieChart />
+          <br />
+          <DoughnutChart />
         </main>
       </header>
     </>
