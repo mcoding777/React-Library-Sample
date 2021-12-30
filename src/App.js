@@ -1,8 +1,8 @@
 import './App.css';
-import Chart1 from './Chart1';
-import Chart2 from './Chart2';
-import Chart3 from './Chart3';
-import Chart4 from './Chart4';
+import MyBarChart from './MyBarChart';
+import LineChart from './LineChart';
+import BarChart from './BarChart';
+import PieChart from './PieChart';
 
 function App() {
   return (
@@ -10,13 +10,13 @@ function App() {
       <header className="App">
         <h1>Hello, JS Chart</h1>
         <main>
-          <Chart1 />
+          <MyBarChart />
           <br />
-          <Chart2 />
+          <LineChart />
           <br />
-          <Chart3 />
+          <BarChart />
           <br />
-          <Chart4 />
+          <PieChart />
         </main>
       </header>
     </>

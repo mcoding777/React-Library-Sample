@@ -1,8 +1,8 @@
 // 직접 만든 막대 차트
 
-function Chart1() {
+function MyBarChart() {
     return (
-      <div className="chart1Container">
+      <div className="MyBarChart_Container">
           <div style={{height: 100}}><span>능력<br/>발휘</span></div>
           <div style={{height: 100}}><span>자율성</span></div>
           <div style={{height: 100}}><span>보수</span></div>
@@ -15,5 +15,5 @@ function Chart1() {
     )
   }
 
-export default Chart1;
+export default MyBarChart;
 

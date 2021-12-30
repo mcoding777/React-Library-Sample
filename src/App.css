@@ -6,8 +6,8 @@ body {
   background-color: gray;
 }
 
-/* chart1 */
-.chart1Container {
+/* MyBarChart */
+.MyBarChart_Container {
   width: 100%;
   height: 400px;
 
@@ -20,7 +20,7 @@ body {
   margin-bottom: 100px;
 }
 
-.chart1Container div {
+.MyBarChart_Container div {
   width: 50px;
   height: 0px;
 
@@ -39,7 +39,7 @@ body {
   transition: all 0.5s ease 1s;
 }
 
-.chart1Container div span {
+.MyBarChart_Container div span {
   color: black;
   display: inline-block;
 
@@ -52,8 +52,8 @@ body {
 }
 
 
-/* chart2 */
-.chart2Container {
+/* LineChart */
+.LineChart_Container {
   width: 600px;
 
   padding: 30px;
@@ -63,8 +63,8 @@ body {
 }
 
 
-/* chart3 */
-.chart3Container {
+/* BarChart */
+.BarChart_Container {
   width: 600px;
   height: 300px;
 
@@ -75,8 +75,8 @@ body {
 }
 
 
-/* chart4 */
-.chart4Container {
+/* PieChart */
+.PieChart_Container {
   width: 700px;
   height: 600px;
 

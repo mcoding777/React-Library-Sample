@@ -2,7 +2,7 @@ import { Chart } from 'react-chartjs-2'
 
 // chart.js로 만든 막대 차트
 
-function Chart3() {
+function BarChart() {
 
     const data = {
       labels: ['2015', '2016', '2017', '2018', '2019', '2020'],
@@ -19,10 +19,10 @@ function Chart3() {
     };
   
     return (
-        <div className='chart3Container'>
+        <div className='BarChart_Container'>
             <Chart type="bar" data={data} />
         </div>
     )
   }
 
-export default Chart3;
+export default BarChart;

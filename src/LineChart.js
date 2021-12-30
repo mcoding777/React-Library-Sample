@@ -4,7 +4,7 @@ import { Line } from 'react-chartjs-2'
 // chart.js로 만든 라인 차트
 // 다른 차트와 다르게 import 'chart.js/auto'를 빼면 오류가 발생한다
 
-function Chart2() {
+function LineChart() {
 
     const data = {
       labels: ['2017', '2018', '2019', '2020', '2021(9월까지)'],
@@ -64,10 +64,10 @@ function Chart2() {
       };
   
     return (
-        <div className='chart2Container'>
+        <div className='LineChart_Container'>
             <Line data={data} options={options} />
         </div>
     )
   }
 
-export default Chart2;
+export default LineChart;
