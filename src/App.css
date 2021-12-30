@@ -93,3 +93,14 @@ body {
 
   background-color: white;
 }
+
+/* RadarChart */
+.RadarChart_Container {
+  width: 500px;
+  height: 300px;
+
+  padding: 30px;
+  margin: 100px auto;
+
+  background-color: white;
+}

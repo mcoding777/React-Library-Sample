@@ -4,6 +4,8 @@ import LineChart from './LineChart';
 import BarChart from './BarChart';
 import PieChart from './PieChart';
 import DoughnutChart from './DoughnutChart';
+import RadarChart from './RadarChart';
+
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <PieChart />
           <br />
           <DoughnutChart />
+          <br />
+          <RadarChart />
         </main>
       </header>
     </>
