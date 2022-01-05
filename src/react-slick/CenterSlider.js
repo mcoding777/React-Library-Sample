@@ -14,32 +14,25 @@ function CenterSlider() {
             className: "center",
             centerMode: true,
             infinite: true,
-            centerPadding: "60px",
+            centerPadding: "80px",
             slidesToShow: 3,
-            speed: 500
+            speed: 500,
         };
 
     return (
         <PosterContainer>
-            <h2>Center Mode</h2>
             <Slider {...settings}>
                 <div>
-                    <h3>1</h3>
+                    <img src={img1} />
                 </div>
                 <div>
-                    <h3>2</h3>
+                    <img src={img2} />
                 </div>
                 <div>
-                    <h3>3</h3>
+                    <img src={img3} />
                 </div>
                 <div>
-                    <h3>4</h3>
-                </div>
-                <div>
-                    <h3>5</h3>
-                </div>
-                <div>
-                    <h3>6</h3>
+                    <img src={img4} />
                 </div>
             </Slider>
         </PosterContainer>
@@ -49,14 +42,25 @@ function CenterSlider() {
 export default CenterSlider;
 
 const PosterContainer = styled.div`
-    width: 1000px;
+    width: 700px;
     height: 400px;
 
     margin: 0 auto;
 
-    & div {
-        background-color: green;
+    & img {
+        width: 150px;
+        height: 200px;
+    }
 
-        height: 100px;
+    & .slick-next {
+        right: -40px;
+    }
+
+    & .slick-prev {
+        left: -40px;
+    }
+
+    & .slick-list {
+        padding: 0 80px;
     }
 `;
