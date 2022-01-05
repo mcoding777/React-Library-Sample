@@ -1,4 +1,5 @@
 import { Radar } from 'react-chartjs-2'
+import styled from 'styled-components';
 
 // chart.js로 만든 레이더 차트
 
@@ -33,10 +34,20 @@ function RadarChart() {
     }
   
     return (
-        <div className='RadarChart_Container'>
+        <RadarChartDiv>
             <Radar data={data} options={options} />
-        </div>
+        </RadarChartDiv>
     )
   }
 
 export default RadarChart;
+
+const RadarChartDiv = styled.div`
+  width: 500px;
+  height: 300px;
+
+  padding: 30px;
+  margin: 100px auto;
+
+  background-color: white;
+`;

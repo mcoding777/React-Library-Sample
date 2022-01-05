@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import 'chart.js/auto'
 import { Line } from 'react-chartjs-2'
 
@@ -64,10 +65,19 @@ function LineChart() {
       };
   
     return (
-        <div className='LineChart_Container'>
+        <LineChartDiv>
             <Line data={data} options={options} />
-        </div>
+        </LineChartDiv>
     )
   }
 
 export default LineChart;
+
+const LineChartDiv = styled.div`
+  width: 600px;
+
+  padding: 30px;
+  margin: 100px auto;
+
+  background-color: white;
+`;

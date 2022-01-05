@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { Chart } from 'react-chartjs-2'
 
 // chart.js로 만든 막대 차트
@@ -19,10 +20,20 @@ function BarChart() {
     };
   
     return (
-        <div className='BarChart_Container'>
+        <BarChartDiv>
             <Chart type="bar" data={data} />
-        </div>
+        </BarChartDiv>
     )
   }
 
 export default BarChart;
+
+const BarChartDiv = styled.div`
+  width: 600px;
+  height: 300px;
+
+  padding: 30px;
+  margin: 100px auto;
+
+  background-color: white;
+`;

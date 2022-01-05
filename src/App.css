@@ -4,6 +4,8 @@
 
 body {
   background-color: gray;
+
+  text-align: center;
 }
 
 /* MyBarChart */
@@ -49,58 +51,4 @@ body {
   color: white;
   
   line-height: 18px;
-}
-
-/* LineChart */
-.LineChart_Container {
-  width: 600px;
-
-  padding: 30px;
-  margin: 100px auto;
-
-  background-color: white;
-}
-
-/* BarChart */
-.BarChart_Container {
-  width: 600px;
-  height: 300px;
-
-  padding: 30px;
-  margin: 100px auto;
-
-  background-color: white;
-}
-
-/* PieChart */
-.PieChart_Container {
-  width: 700px;
-  height: 600px;
-
-  padding: 30px;
-  margin: 100px auto;
-
-  background-color: white;
-}
-
-/* DoughnutChart */
-.DoughnutChart_Container {
-  width: 700px;
-  height: 600px;
-
-  padding: 30px;
-  margin: 100px auto;
-
-  background-color: white;
-}
-
-/* RadarChart */
-.RadarChart_Container {
-  width: 500px;
-  height: 300px;
-
-  padding: 30px;
-  margin: 100px auto;
-
-  background-color: white;
 }

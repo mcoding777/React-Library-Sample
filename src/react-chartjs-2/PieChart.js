@@ -1,13 +1,14 @@
-import { Doughnut } from 'react-chartjs-2'
+import { Pie } from 'react-chartjs-2'
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import styled from 'styled-components';
 
-// chart.js로 만든 도넛 차트
+// chart.js로 만든 파이 차트
 
 // chartjs-plugin-datalabels 플러그인
 // Chart.register(ChartDataLabels); => 글로벌 플러그인 (같은 페이지의 모든 차트에 적용됨)
 // 차트 속성에 plugins={[ChartDataLabels] 추가 => 개별 플러그인
 
-function DoughnutChart() {
+function PieChart() {
 
     const data = {
       labels: ['Action', 'Drama', 'Comedy', 'Crime', 'etc'],
@@ -57,14 +58,24 @@ function DoughnutChart() {
     }
   
     return (
-        <div className='DoughnutChart_Container'>
-            <Doughnut 
+        <PieChartDiv>
+            <Pie 
                 data={data} 
                 options={options} 
                 plugins={[ChartDataLabels]} 
             />
-        </div>
+        </PieChartDiv>
     )
   }
 
-export default DoughnutChart;
+export default PieChart;
+
+const PieChartDiv = styled.div`
+  width: 700px;
+  height: 600px;
+
+  padding: 30px;
+  margin: 100px auto;
+
+  background-color: white;
+`;

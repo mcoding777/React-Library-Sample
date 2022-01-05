@@ -1,29 +1,26 @@
 import './App.css';
 import MyBarChart from './MyBarChart';
-import LineChart from './LineChart';
-import BarChart from './BarChart';
-import PieChart from './PieChart';
-import DoughnutChart from './DoughnutChart';
-import RadarChart from './RadarChart';
+import LineChart from './react-chartjs-2/LineChart';
+import BarChart from './react-chartjs-2/BarChart';
+import PieChart from './react-chartjs-2/PieChart';
+import DoughnutChart from './react-chartjs-2/DoughnutChart';
+import RadarChart from './react-chartjs-2/RadarChart';
+import CenterSlider from './react-slick/CenterSlider';
 
 
 function App() {
   return (
     <>
       <header className="App">
-        <h1>Hello, JS Chart</h1>
+        <h1>Hello, React Library</h1>
         <main>
           <MyBarChart />
-          <br />
           <LineChart />
-          <br />
           <BarChart />
-          <br />
           <PieChart />
-          <br />
           <DoughnutChart />
-          <br />
           <RadarChart />
+          <CenterSlider />
         </main>
       </header>
     </>
