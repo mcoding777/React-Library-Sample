@@ -14,7 +14,7 @@ function CenterSlider() {
             className: "center",
             centerMode: true,
             infinite: true,
-            centerPadding: "80px",
+            centerPadding: "75px",
             slidesToShow: 3,
             speed: 500,
         };
@@ -54,13 +54,17 @@ const PosterContainer = styled.div`
 
     & .slick-next {
         right: -40px;
+
+        &::before {
+            font-size: 50px;
+        }
     }
 
     & .slick-prev {
-        left: -40px;
-    }
+        left: -70px;
 
-    & .slick-list {
-        padding: 0 80px;
+        &::before {
+            font-size: 50px;
+        }
     }
 `;
