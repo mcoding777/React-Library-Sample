@@ -45,7 +45,7 @@ export default CenterSlider;
 
 const PosterContainer = styled.div`
     width: 700px;
-    height: 400px;
+    height: 200px;
 
     margin: 0 auto;
 
