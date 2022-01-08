@@ -6,6 +6,7 @@ import PieChart from './react-chartjs-2/PieChart';
 import DoughnutChart from './react-chartjs-2/DoughnutChart';
 import RadarChart from './react-chartjs-2/RadarChart';
 import CenterSlider from './react-slick/CenterSlider';
+import BasicTable from './MUI/BasicTable';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <DoughnutChart />
           <RadarChart />
           <CenterSlider />
+          <BasicTable />
         </main>
       </header>
     </>
