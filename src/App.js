@@ -7,7 +7,7 @@ import DoughnutChart from './react-chartjs-2/DoughnutChart';
 import RadarChart from './react-chartjs-2/RadarChart';
 import CenterSlider from './react-slick/CenterSlider';
 import BasicTable from './MUI/BasicTable';
-
+import CustomTable from './MUI/CustomTable';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
           <RadarChart />
           <CenterSlider />
           <BasicTable />
+          <CustomTable />
         </main>
       </header>
     </>
