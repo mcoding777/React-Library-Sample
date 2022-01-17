@@ -13,11 +13,12 @@ const StyledTableCell = styles(TableCell)(({ theme }) => ({
     backgroundColor: "#ec5990",
     color: theme.palette.common.white,
     fontWeight: "bold",
-    border: "3px solid white",
+    border: "2px solid white",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    backgroundColor: "#fdfcf6",
+    backgroundColor: "#dbdbdb",
+    border: "2px solid white",
   },
 }));
 
@@ -27,36 +28,40 @@ const StyledTableRow = styles(TableRow)(({ theme }) => ({
   },
   // hide last border
   '&:last-child td, &:last-child th': {
-    border: "3px solid white",
   },
 }));
 
-function createData(name, age, today) {
-  return { name, age, today };
+function createData(field, job) {
+  return { field, job };
 }
 
 const rows = [
-  createData("코딩소녀", 24, "2022.01.16"),
+  createData("중졸", "캐스팅디렉터, 스포츠해설가, 신약개발연구원. 환경영향평가원"),
+  createData("고졸", "캐스팅디렉터, 스포츠해설가, 신약개발연구원. 환경영향평가원"),
+  createData("대졸", "캐스팅디렉터, 스포츠해설가, 신약개발연구원. 환경영향평가원"),
+  createData("대학원졸", "캐스팅디렉터, 스포츠해설가, 신약개발연구원. 환경영향평가원"),
 ];
 
 export default function CustomTable() {
   return (
     <CustomTableDiv>
         <TableContainer component={Paper} sx={{ margin: 3 }}>
-        <Table sx={{ maxWidth: 700 }} aria-label="customized table">
+        <Table sx={{ minWidth: 700, height: 500 }} aria-label="customized table">
             <TableHead>
             <TableRow>
-                <StyledTableCell align="center">이름</StyledTableCell>
-                <StyledTableCell align="center">성별</StyledTableCell>
-                <StyledTableCell align="center">검사 날짜</StyledTableCell>
+                <StyledTableCell align="center">학력</StyledTableCell>
+                <StyledTableCell align="center">직업</StyledTableCell>
             </TableRow>
             </TableHead>
             <TableBody>
             {rows.map((row, index) => (
                 <StyledTableRow key={index}>
-                <StyledTableCell align="center">{row.name}</StyledTableCell>
-                <StyledTableCell align="center">{row.age}</StyledTableCell>
-                <StyledTableCell align="center">{row.today}</StyledTableCell>
+                  <StyledTableCell component="th" scope="row" align="center" 
+                    sx={{ width: 150, fontWeight: "bold" }}
+                  >
+                    {row.field}
+                  </StyledTableCell>
+                <StyledTableCell align="center">{row.job}</StyledTableCell>
                 </StyledTableRow>
             ))}
             </TableBody>
@@ -68,7 +73,11 @@ export default function CustomTable() {
 
 // styled-components
 const CustomTableDiv = styled.div`
-  width: 700px;
+  width: 900px;
 
-  margin: 100px auto;
+  margin: 10px auto;
+
+  & .css-1eorqe0-MuiTableCell-root { // 값이 들어가는 셀 부분 스타일링
+    padding: 30px;
+  }
 `;
