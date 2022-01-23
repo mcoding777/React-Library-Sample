@@ -8,6 +8,7 @@ import RadarChart from './react-chartjs-2/RadarChart';
 import CenterSlider from './react-slick/CenterSlider';
 import BasicTable from './MUI/BasicTable';
 import CustomTable from './MUI/CustomTable';
+import DropdownSearchSelection from './SemanticUI/DropdownSearchSelection';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <CenterSlider />
           <BasicTable />
           <CustomTable />
+          <DropdownSearchSelection />
         </main>
       </header>
     </>
